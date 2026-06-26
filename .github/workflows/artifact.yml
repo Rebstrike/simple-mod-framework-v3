@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
 
-      - uses: actions-rs/toolchain@v4
+      - uses: actions-rs/toolchain@v2
         with:
           toolchain: stable
           target: x86_64-pc-windows-msvc
@@ -114,7 +114,7 @@ jobs:
           filename: Release.zip
           directory: dist
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: Output
           path: dist/Release.zip
