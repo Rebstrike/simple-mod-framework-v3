@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
 
-      - uses: actions-rs/toolchain@v2
+      - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
           target: x86_64-pc-windows-msvc
